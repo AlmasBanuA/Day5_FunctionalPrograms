@@ -1,12 +1,18 @@
 package bridgelabz;
 
+/*
+* importing the scanner class
+*/
 import java.util.Scanner;
 
 public class QuadraticEquation {
-
-	// Function to find the roots of equation and print it
-
+	
+	/*
+	* Function to find the roots of equation and print it
+	*/
+	
 	static void roots(int a, int b, int c) {
+		
 		// calculating delta value
 		int delta = Math.abs(b * b - 4 * a * c);
 		double x1 = (-b + Math.pow(delta, 1 / 2)) / (2 * a);
@@ -18,10 +24,17 @@ public class QuadraticEquation {
 
 	}
 
-	// Main method to test the class
-
+	/*
+	 * Main method to test the class
+	*/
 	public static void main(String[] args) {
+		/*
+		* creating scanner object
+		*/
 		Scanner s = new Scanner(System.in);
+		/*
+		* using try and catch block method code to be executed in try block others throws exception
+		*/
 		try {
 			System.out.println("enter value for a ");
 			int a = s.nextInt();
