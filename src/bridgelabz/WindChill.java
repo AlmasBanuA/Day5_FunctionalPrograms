@@ -1,5 +1,8 @@
 package bridgelabz;
 
+/*
+* import scanner class
+*/
 import java.util.Scanner;
 
 public class WindChill {
@@ -11,12 +14,19 @@ public class WindChill {
 	 */
 	static void windChill(double t, double v) {
 
+		/*
+		*  formula to calculate windchill
+		*/
 		double w = 35.74 + 0.62158 * t + (0.4275 * t - 35.75) * Math.pow(v, 0.16);
 		System.out.println("Wind Chill : " + w);
 	}
 
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
+		
+		/*
+		*  using try and catch block to handle the exception
+		*/
 		try {
 			System.out.println("Enter temperature in fahrenheit");
 			double t = s.nextDouble();
