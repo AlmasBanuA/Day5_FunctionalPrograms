@@ -24,7 +24,7 @@ public class TripletArraySum {
 		}
 
 		/*
-		* If no triplet with 0 sum found in array
+		*  If no triplet with 0 sum found in array
 		*/
 		
 		if (found == false)
