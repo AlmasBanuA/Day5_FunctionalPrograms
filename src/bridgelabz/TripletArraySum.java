@@ -2,7 +2,9 @@ package bridgelabz;
 
 public class TripletArraySum {
 
-// Prints all triplets in arr[] with 0 sum
+/*
+* Prints all triplets in arr[] with 0 sum
+*/
 	static void findTriplets(int[] arr, int n) {
 		boolean found = true;
 		for (int i = 0; i < n - 2; i++) {
@@ -21,7 +23,10 @@ public class TripletArraySum {
 			}
 		}
 
-		// If no triplet with 0 sum found in array
+		/*
+		* If no triplet with 0 sum found in array
+		*/
+		
 		if (found == false)
 			System.out.println(" not exist ");
 
